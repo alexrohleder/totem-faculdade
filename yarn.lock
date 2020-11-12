@@ -1134,10 +1134,58 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@prisma/bar@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/@prisma/bar/-/bar-0.0.1.tgz#088c4fbbb79c588391437ade9fd3a85527e753b3"
+  integrity sha512-FVLhwVkbfhXlBhroWfIXMLi+3Jh9IEzYp+9z+MUUiw3ZsbcoAil7CN9/QIjHc4/TcCRyRfuSmT7qCnn4O+TjJw==
+
+"@prisma/cli@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.npmjs.org/@prisma/cli/-/cli-2.11.0.tgz#34bdc5573ac40edae336b65fa73a164cae437622"
+  integrity sha512-RphW+1SPrEKgpuE5RFM0mv3BeVTF8MCRIyBt35Z9Z/E4YI30qgEWfZu6VfsNDarHRsFiJRKC73wx/aMQ2rLp4g==
+  dependencies:
+    "@prisma/bar" "0.0.1"
+    "@prisma/engines" "2.11.0-10.58369335532e47bdcec77a2f1e7c1fb83a463918"
+
+"@prisma/client@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.npmjs.org/@prisma/client/-/client-2.11.0.tgz#574c1aa3b571ea01c0fa8dca348c6ba5db41dcc9"
+  integrity sha512-BF7K/yi5fAnrt7MelQqUueJyl06IGmIxf+7f5RxFSvyO6xZMbOYxhW21kV2wt10mOIS0khQbo0xY6w/8jViJuQ==
+  dependencies:
+    "@prisma/engines-version" "2.11.0-10.58369335532e47bdcec77a2f1e7c1fb83a463918"
+
+"@prisma/engines-version@2.11.0-10.58369335532e47bdcec77a2f1e7c1fb83a463918":
+  version "2.11.0-10.58369335532e47bdcec77a2f1e7c1fb83a463918"
+  resolved "https://registry.npmjs.org/@prisma/engines-version/-/engines-version-2.11.0-10.58369335532e47bdcec77a2f1e7c1fb83a463918.tgz#840bb5ca8707ed3b852d250c1bac9c75098682ee"
+  integrity sha512-qlkW4dKoW1dUnperWPuhFriZ/NTHlsKLhBbebxRa8qMuD3o37SvWIDGLjFOQx1N0Eb4H04rI3XxgjkWLFVlZCw==
+
+"@prisma/engines@2.11.0-10.58369335532e47bdcec77a2f1e7c1fb83a463918":
+  version "2.11.0-10.58369335532e47bdcec77a2f1e7c1fb83a463918"
+  resolved "https://registry.npmjs.org/@prisma/engines/-/engines-2.11.0-10.58369335532e47bdcec77a2f1e7c1fb83a463918.tgz#5f02f311ce48297ef3fa9861dcab5ec3e52f1371"
+  integrity sha512-0WaUybWM7J5zQuG/zYLbV+ZKx9/nzS7Ruu7Y0K2lXJKy3Z9koeVttq+Xt7tVmUX9TLgI1Rwhb9R2e1JMNDWbsw==
+
 "@types/json-schema@^7.0.5":
   version "7.0.6"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw==
+
+"@types/node@^14.14.7":
+  version "14.14.7"
+  resolved "https://registry.npmjs.org/@types/node/-/node-14.14.7.tgz#8ea1e8f8eae2430cf440564b98c6dfce1ec5945d"
+  integrity sha512-Zw1vhUSQZYw+7u5dAwNbIA9TuTotpzY/OF7sJM9FqPOF3SPjKnxrjoTktXDZgUjybf4cWVBP7O8wvKdSaGHweg==
+
+"@types/prop-types@*":
+  version "15.7.3"
+  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+  integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
+"@types/react@^16.9.56":
+  version "16.9.56"
+  resolved "https://registry.npmjs.org/@types/react/-/react-16.9.56.tgz#ea25847b53c5bec064933095fc366b1462e2adf0"
+  integrity sha512-gIkl4J44G/qxbuC6r2Xh+D3CGZpJ+NdWTItAPmZbR5mUS+JQ8Zvzpl0ea5qT/ZT3ZNTUcDKUVqV3xBE8wv/DyQ==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^3.0.2"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -2195,6 +2243,11 @@ cssnano-simple@1.2.0:
   dependencies:
     cssnano-preset-simple "1.2.0"
     postcss "^7.0.32"
+
+csstype@^3.0.2:
+  version "3.0.4"
+  resolved "https://registry.npmjs.org/csstype/-/csstype-3.0.4.tgz#b156d7be03b84ff425c9a0a4b1e5f4da9c5ca888"
+  integrity sha512-xc8DUsCLmjvCfoD7LTGE0ou2MIWLx0K9RCZwSHMOdynqRsP4MtUcLeqh1HcQ2dInwDTqn+3CE0/FZh1et+p4jA==
 
 cyclist@^1.0.1:
   version "1.0.1"
@@ -5048,6 +5101,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-4.0.5.tgz#ae9dddfd1069f1cb5beb3ef3b2170dd7c1332389"
+  integrity sha512-ywmr/VrTVCmNTJ6iV2LwIrfG1P+lv6luD8sUJs+2eI9NLGigaN+nUQc13iHqisq7bra9lnmUSYqbJvegraBOPQ==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

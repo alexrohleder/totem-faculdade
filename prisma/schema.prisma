@@ -1,0 +1,34 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Institution {
+  id              Int    @id @default(autoincrement())
+  name            String @unique
+  logo            String
+  backgroundColor String
+  homeMedia       String
+  homeMediaType   String @default("video")
+  items           Item[]
+}
+
+model Item {
+  id            Int     @id @default(autoincrement())
+  parentId      Int?
+  institutionId Int
+  title         String
+  style         String
+  content       String? // markdown
+
+  parent      Item?       @relation("ItemToItem", fields: [parentId], references: [id])
+  children    Item[]      @relation("ItemToItem")
+  institution Institution @relation(fields: [institutionId], references: [id])
+}
